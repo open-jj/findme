@@ -1,0 +1,28 @@
+/*stop looking at my code*/
+
+.clr, .sco, .hsco, .rst, .time {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: right;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.src {
+    font-size: 16px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    border: 10px;
+    border-color: black;
+}
