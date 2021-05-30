@@ -3,7 +3,7 @@
 @font-face {
     /*monaco*/
     font-family: "Monaco";
-    src: url("tff/monaco.ttf") format("truetype");
+    src: url("monaco.ttf") format("truetype");
 }
 .clr {
     font-family: Monaco;
@@ -19,11 +19,11 @@ button {
     border-color: black;
 }
 
-.body-container {
-    /*filter: blur(8px);
-    -webkit-filter: blur(8px);*/
+/*.body-container {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
-
+*/
 body {
     background-color: blueviolet;  /*For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, blueviolet, blue);
@@ -54,8 +54,8 @@ body {
     box-shadow: 2px 2px #1e1e1e;
     border-radius: 12px;
     bottom: 10px;
-    /*background-color: #323232;*/
     background-color: white;
+    position: absolute;
     left: 30px;
     width: 1840px;
     height: 100px;
