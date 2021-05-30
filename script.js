@@ -15,7 +15,6 @@ window.onload = function() {
             if (time == 0) { 
                 clearInterval(rt)
                 irt = 0;
-                streak = 0;
                 document.querySelector(".time").innerHTML = `Time Left: ${irt.toString()}`
                 var elements = document.getElementsByTagName('button');
                 while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
@@ -23,7 +22,6 @@ window.onload = function() {
                 addlisteners();
                 score = 0;
                 document.querySelector(".sco").innerHTML = "Score: " + score.toString();
-                document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
                 time = 8;
                 repeattime()
             }
@@ -136,10 +134,8 @@ window.onload = function() {
                 scoreshow1.style.position = "absolute";
                 if (btn[i].className == tokill) {
                     score += 1;
-                    beststreak += 1;
                     streak += 1;
                     document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
-                    document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
                     document.querySelector(".sco").innerHTML = "Score: " + score.toString();
                     console.log("Correct");
                     time = 8;
@@ -147,7 +143,9 @@ window.onload = function() {
                     while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
                     if (score > highscore) {
                         highscore += 1;
+                        beststreak += 1;
                         document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
+                        document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
                     }
                     else {}
                     document.body.appendChild(scoreshow1);
@@ -200,14 +198,12 @@ window.onload = function() {
     repeattime()
     document.querySelector(".rst").addEventListener("click", function() {
         score = 0;
-        streak = 0;
         time = 7;
         irt = 1;
         clearInterval(rt)
         var elements = document.getElementsByTagName('button');
         while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
         document.querySelector(".sco").innerHTML = "Score: " + score.toString();
-        document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
         get_players();
         addlisteners();
         repeattime();
