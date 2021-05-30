@@ -59,6 +59,7 @@ body {
     left: 30px;
     width: 1840px;
     height: 100px;
+    font-family: Monaco;
 }
 
 .one {
@@ -129,3 +130,29 @@ body {
     cursor: pointer;
 }
 
+.beststreak {
+    right: 140px;
+    position: absolute;
+}
+
+.highscore {
+    right: 148px;
+    top: 32px;
+    position: absolute;
+}
+
+.streak {
+    right: 10px;
+    position: absolute;
+}
+
+.score {
+    right: 18px;
+    top: 32px;
+    position: absolute;
+}
+
+.beststreak, .streak {
+    position: absolute;
+    bottom: 27px;
+}
