@@ -3,6 +3,8 @@ window.onload = function() {
     var tk_global;
     var highscore = 0;
     var time = 7;
+    var streak = 0;
+    var beststreak = 0;
     document.querySelector(".time").innerHTML = `Time Left: ${time.toString()}`
     repeattime = function() {
         var irt = 1;
@@ -71,12 +73,40 @@ window.onload = function() {
                     document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
                     if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
                         document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                    }
-                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                    }
-                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -89,6 +119,8 @@ window.onload = function() {
     }
     addlisteners = function() {
         const tokill = tk_global;
+        document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
+        document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
         var btn = document.getElementsByTagName("button");
         for (let i = 0; i < btn.length; i++) {
             btn[i].addEventListener("click", function() {
@@ -102,6 +134,10 @@ window.onload = function() {
                 scoreshow1.style.position = "absolute";
                 if (btn[i].className == tokill) {
                     score += 1;
+                    beststreak += 1;
+                    streak += 1;
+                    document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
+                    document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
                     document.querySelector(".sco").innerHTML = "Score: " + score.toString();
                     console.log("Correct");
                     time = 8;
@@ -120,17 +156,22 @@ window.onload = function() {
                     }, 477);
                 }
                 else {
+                    streak = 0;
+                    document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
+                    score_minus_choice = [
+                        1, 2, 3, 4, 5
+                    ]
+                    const minuschoice = score_minus_choice[Math.floor(Math.random() * score_minus_choice.length)];
                     if (score == 0) {}
                     else {
-                        score_minus_choice = [
-                            1, 2, 3, 4, 5
-                        ]
-                        score -= score_minus_choice[Math.floor(Math.random() * score_minus_choice.length)];
+                        score -= minuschoice;
                         if (score <= 0) { score = 0 }
                         else { document.querySelector(".sco").innerHTML = "Score: " + score.toString(); }
+                        var scoreshow2 = document.createElement("P");
                     }
                     var scoreshow2 = document.createElement("P");
-                    scoreshow2.innerHTML = "-1";
+                    if (score <= 0) { score = 0; scoreshow2.innerHTML = "-0";}
+                    else { scoreshow2.innerHTML = `-${minuschoice}`; }
                     scoreshow2.style.color = "red";
                     scoreshow2.style.top = btn[i].style.top;
                     scoreshow2.style.left = btn[i].style.left;

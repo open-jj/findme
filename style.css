@@ -1,6 +1,6 @@
 /*stop looking at my code*/
 
-.clr, .sco, .hsco, .rst, .time {
+.clr, .sco, .hsco, .rst, .time, .bstrk, .strk {
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: right;
