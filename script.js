@@ -146,8 +146,11 @@ window.onload = function() {
                     while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
                     if (score > highscore) {
                         highscore += 1;
-                        beststreak += 1;
                         document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
+                    if (streak > beststreak) {
+                        beststreak += 1;
+                        document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
+                    }
                     }
                     else {}
                     document.body.appendChild(scoreshow1);
