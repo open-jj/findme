@@ -43,7 +43,7 @@ window.onload = function() {
 
         players = []
         let mulpos = 789; //int for *
-        let addpos = 200;
+        let addpos = 600;
         var plr_array_tk = Math.floor(Math.random() * plr_choice.length);
         //creating elements & adding attributes
         for (let i = 0; i < plr_choice[plr_array_tk]; i++) {
