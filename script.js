@@ -15,6 +15,7 @@ window.onload = function() {
             if (time == 0) { 
                 clearInterval(rt)
                 irt = 0;
+                streak = 0;
                 document.querySelector(".time").innerHTML = `Time Left: ${irt.toString()}`
                 var elements = document.getElementsByTagName('button');
                 while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
@@ -22,6 +23,7 @@ window.onload = function() {
                 addlisteners();
                 score = 0;
                 document.querySelector(".sco").innerHTML = "Score: " + score.toString();
+                document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
                 time = 8;
                 repeattime()
             }
@@ -198,12 +200,14 @@ window.onload = function() {
     repeattime()
     document.querySelector(".rst").addEventListener("click", function() {
         score = 0;
+        streak = 0;
         time = 7;
         irt = 1;
         clearInterval(rt)
         var elements = document.getElementsByTagName('button');
         while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
         document.querySelector(".sco").innerHTML = "Score: " + score.toString();
+        document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
         get_players();
         addlisteners();
         repeattime();
