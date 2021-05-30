@@ -1,28 +1,131 @@
 /*stop looking at my code*/
 
-.clr, .sco, .hsco, .rst, .time, .bstrk, .strk {
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: right;
+@font-face {
+    /*monaco*/
+    font-family: "Monaco";
+    src: url("./monaco.ttf") format("truetype");
 }
-
-p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+.clr {
+    font-family: Monaco;
+    font-size: 22px;
+    text-align: center;
 }
 a {
     text-decoration: none;
     color: black;
 }
-.src {
-    font-size: 16px;
-    text-align: right;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
 button {
     border: 10px;
     border-color: black;
 }
+
+.body-container {
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+}
+
+body {
+    background-color: blueviolet;  /*For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, blueviolet, blue);
+}
+
+.main-container {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    background-color: white;
+    position: absolute;
+    left: 30px;
+    width: 1840px;
+    top: 20px;
+    height: 780px;
+}
+
+.invent-int {
+    font-family: Monaco;
+    color: white;
+    font-size: 20px;
+    left: 5px;
+    position: absolute;
+}
+
+.bottom-container {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    bottom: 10px;
+    /*background-color: #323232;*/
+    background-color: white;
+    left: 30px;
+    width: 1840px;
+    height: 100px;
+}
+
+.one {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    left: 10px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #323232;
+    color: white;
+}
+
+.two {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    left: 110px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #323232;
+    color: white;
+}
+
+.three {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    left: 210px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #323232;
+    color: white;
+}
+
+.four {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    left: 310px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #323232;
+    color: white;
+}
+.five {
+    border: 2px solid transparent;
+    box-shadow: 2px 2px #1e1e1e;
+    border-radius: 12px;
+    left: 410px;
+    top: 5px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    background-color: #323232;
+    color: white;
+}
+
+.btn-one, .btn-two, .btn-three, .btn-four, .btn-five {
+    cursor: pointer;
+}
+
