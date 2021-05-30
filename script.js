@@ -21,7 +21,9 @@ window.onload = function() {
                 get_players();
                 addlisteners();
                 score = 0;
+                streak = 0;
                 document.querySelector(".sco").innerHTML = "Score: " + score.toString();
+                document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
                 time = 8;
                 repeattime()
             }
@@ -95,40 +97,7 @@ window.onload = function() {
                                                                 document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
                                                                 if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
                                                                     document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
-                                                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                                                                    
-                                                                                                            }
-                                                                                                        }
-                                                                                                    }
-                                                                                                }
-                                                                                            }
-                                                                                        }
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
+                        
                                                                 }
                                                             }
                                                         }
@@ -169,6 +138,7 @@ window.onload = function() {
                     score += 1;
                     streak += 1;
                     document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
+                    document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
                     document.querySelector(".sco").innerHTML = "Score: " + score.toString();
                     console.log("Correct");
                     time = 8;
@@ -178,7 +148,6 @@ window.onload = function() {
                         highscore += 1;
                         beststreak += 1;
                         document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
-                        document.querySelector(".bstrk").innerHTML = "Best Streak: " + beststreak.toString();
                     }
                     else {}
                     document.body.appendChild(scoreshow1);
@@ -231,12 +200,14 @@ window.onload = function() {
     repeattime()
     document.querySelector(".rst").addEventListener("click", function() {
         score = 0;
+        streak = 0;
         time = 7;
         irt = 1;
         clearInterval(rt)
         var elements = document.getElementsByTagName('button');
         while (elements[0]) elements[0].parentNode.removeChild(elements[0]);
         document.querySelector(".sco").innerHTML = "Score: " + score.toString();
+        document.querySelector(".strk").innerHTML = "Streak: " + streak.toString();
         get_players();
         addlisteners();
         repeattime();
