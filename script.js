@@ -95,7 +95,40 @@ window.onload = function() {
                                                                 document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
                                                                 if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
                                                                     document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                        
+                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                                if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                                    document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                                    if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                                        document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                                        if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                                            document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                                                            if (document.querySelector(`.${players[i]}`).style.backgroundColor == document.querySelector(`.${tokill}`).style.backgroundColor && players[i] != tokill) {
+                                                                                                                document.querySelector(`.${players[i]}`).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                                                                    
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
                                                         }
