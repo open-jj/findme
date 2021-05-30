@@ -3,7 +3,7 @@
 @font-face {
     /*monaco*/
     font-family: "Monaco";
-    src: url("./monaco.ttf") format("truetype");
+    src: url("tff/monaco.ttf") format("truetype");
 }
 .clr {
     font-family: Monaco;
