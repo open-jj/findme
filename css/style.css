@@ -5,7 +5,7 @@
     font-family: "Monaco";
     src: url("monaco.ttf") format("truetype");
 }
-@media screen and (max-width: 15360px) and (max-height: 8640) {
+@media screen and (max-width: 15360px) {
 
     .clr {
         font-family: Monaco;
@@ -159,7 +159,7 @@
         bottom: 27px;
     }
 
-@media screen and (max-width: 2560px) and (max-height: 1600) {
+@media screen and (max-width: 2560px) {
 
         .clr {
             font-family: Monaco;
