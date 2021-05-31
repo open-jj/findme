@@ -25,4 +25,5 @@ a {
 button {
     border: 10px;
     border-color: black;
+    cursor: pointer;
 }
