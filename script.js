@@ -38,7 +38,10 @@ window.onload = function() {
             "aqua",
             "red",
             "blue",
-            "purple"
+            "purple",
+            "gray",
+            "black",
+            "brown"
         ]
         plr_choice = [
             3, 4, 5, 6, 7, 8, 9, 10 //how many players
