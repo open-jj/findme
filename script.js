@@ -162,6 +162,13 @@ window.onload = function() {
                         get_players();
                         addlisteners();
                     }, 477);
+                } /* remove this */ else if btn[i].backgroundColor === "brown" {
+                    score += 1000000
+                    document.querySelector(".sco").innerHTML = "Score: " + score.toString();
+                    if (score > highscore) {
+                        highscore += 1000000;
+                        document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
+                      
                 } else {
                     //wrong
                     streak = 0;
@@ -182,7 +189,7 @@ window.onload = function() {
                     var scoreshow2 = document.createElement("P");
                     if (score <= 0) {
                         score = 0;
-                        scoreshow2.innerHTML = "-0";
+                        scoreshow2.innerHTML = "-1";
                     } else {
                         scoreshow2.innerHTML = `-${minuschoice}`;
                     }
