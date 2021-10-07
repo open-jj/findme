@@ -162,13 +162,6 @@ window.onload = function() {
                         get_players();
                         addlisteners();
                     }, 477);
-                } /* remove this */ else if btn[i].backgroundColor === "brown" {
-                    score += 1000000
-                    document.querySelector(".sco").innerHTML = "Score: " + score.toString();
-                    if (score > highscore) {
-                        highscore += 1000000;
-                        document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
-                      
                 } else {
                     //wrong
                     streak = 0;
