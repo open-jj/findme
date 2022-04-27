@@ -117,7 +117,12 @@ window.onload = function() {
             }
             if (players[i] === tokill) {} else {}
         }
-        document.querySelector(".clr").innerHTML = "Color: " + document.querySelector(`.${tokill}`).style.backgroundColor;
+        
+        if (document.querySelector(`.${tokill}`).style.backgroundColor === "rgb(92, 64, 51)" || document.querySelector(`.${tokill}`).style.backgroundColor === "#5C4033") {document.querySelector(".clr").innerHTML = "Color: Brown"} else {
+            document.querySelector(".clr").innerHTML = "Color: Brown"
+        } else {
+            document.querySelector(".clr").innerHTML = `Color: ${document.querySelector(`.${tokill}`).style.backgroundColor}`
+        }
         document.querySelector(".sco").innerHTML = "Score: " + score.toString()
         document.querySelector(".hsco").innerHTML = "High Score: " + highscore.toString()
     }
