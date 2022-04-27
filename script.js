@@ -47,8 +47,8 @@ window.onload = function() {
         ]
 
         players = []
-        let mulpos = 212; //int for * // 789
-        let addpos = 423; // 600
+        let mulpos = 789; //int for * // 789
+        let addpos = 600; // 600
         var plr_array_tk = Math.floor(Math.random() * plr_choice.length);
         //creating elements & adding attributes
         for (let i = 0; i < plr_choice[plr_array_tk]; i++) {
@@ -57,10 +57,10 @@ window.onload = function() {
             plr.style.width = "100px";
             plr.style.height = "100px";
             plr.style.position = "absolute";
-            plr.style.right = `${Math.round(Math.random() * mulpos + addpos * 92)}px`;
+            plr.style.right = `${Math.round(Math.random() * mulpos + addpos - 178)}px`;
             plr.style.left = `${Math.round(Math.random() * mulpos)}px`;
-            plr.style.top = `${Math.round(Math.random() * 321)}px`;
-            plr.style.bottom = `${Math.round(Math.random() * 212)}px`;
+            plr.style.top = `${Math.round(Math.random() * mulpos)}px`;
+            plr.style.bottom = `${Math.round(Math.random() * mulpos)}px`;
             plr.style.border = "border: 2px solid transparent";
             plr.style.borderRadius = "25px";
             plr.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
