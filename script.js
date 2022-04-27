@@ -35,22 +35,20 @@ window.onload = function() {
             "orange",
             "pink",
             "yellow",
-            "aqua",
             "red",
             "blue",
             "purple",
             "gray",
             "black",
-            "brown",
-            "turquoise"
+            "#5C4033"
         ]
         plr_choice = [
             3, 4, 5, 6, 7, 8, 9, 10 //how many players
         ]
 
         players = []
-        let mulpos = 789; //int for *
-        let addpos = 600;
+        let mulpos = 212; //int for * // 789
+        let addpos = 423; // 600
         var plr_array_tk = Math.floor(Math.random() * plr_choice.length);
         //creating elements & adding attributes
         for (let i = 0; i < plr_choice[plr_array_tk]; i++) {
