@@ -30,7 +30,7 @@ window.onload = function() {
         }, 1000)
     }
     get_players = function() {
-
+        colorsUsed = []
         colors = [ // colors
             "orange",
             "pink",
@@ -43,7 +43,7 @@ window.onload = function() {
             "#5C4033"
         ]
         plr_choice = [
-            3, 4, 5, 6, 7, 8, 9, 10 //how many players
+            3, 4, 5, 6, 7, 8, 9 //how many players
         ]
 
         players = []
