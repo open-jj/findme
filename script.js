@@ -53,7 +53,7 @@ window.onload = function() {
         //creating elements & adding attributes
         for (let i = 0; i < plr_choice[plr_array_tk]; i++) {
             plr = document.createElement("BUTTON");
-            plr.className = `player${Math.round(Math.random() * 456)}`;
+            plr.className = `player${Math.round(Math.random() * 123)}`;
             plr.style.width = "100px";
             plr.style.height = "100px";
             plr.style.position = "absolute";
@@ -62,7 +62,7 @@ window.onload = function() {
             plr.style.top = `${Math.round(Math.random() * mulpos)}px`;
             plr.style.bottom = `${Math.round(Math.random() * mulpos)}px`;
             plr.style.border = "border: 2px solid transparent";
-            plr.style.borderradius = "12px";
+            plr.style.borderRadius = "25px";
             plr.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             players.push(plr.className);
             document.body.appendChild(plr);
