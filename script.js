@@ -53,14 +53,14 @@ window.onload = function() {
         //creating elements & adding attributes
         for (let i = 0; i < plr_choice[plr_array_tk]; i++) {
             plr = document.createElement("BUTTON");
-            plr.className = `player${Math.round(Math.random() * 123)}`;
+            plr.className = `player${Math.round(Math.random() * 321)}`;
             plr.style.width = "100px";
             plr.style.height = "100px";
             plr.style.position = "absolute";
-            plr.style.right = `${Math.round(Math.random() * mulpos + addpos * 20)}px`;
+            plr.style.right = `${Math.round(Math.random() * mulpos + addpos * 92)}px`;
             plr.style.left = `${Math.round(Math.random() * mulpos)}px`;
             plr.style.top = `${Math.round(Math.random() * 321)}px`;
-            plr.style.bottom = `${Math.round(Math.random() * 100)}px`;
+            plr.style.bottom = `${Math.round(Math.random() * 212)}px`;
             plr.style.border = "border: 2px solid transparent";
             plr.style.borderRadius = "25px";
             plr.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
