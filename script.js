@@ -119,7 +119,7 @@ window.onload = function() {
         }
         
         if (document.querySelector(`.${tokill}`).style.backgroundColor === "rgb(92, 64, 51)" || document.querySelector(`.${tokill}`).style.backgroundColor === "#5C4033") {
-            document.querySelector(".clr").innerHTML = "Color: Brown"
+            document.querySelector(".clr").innerHTML = "Color: brown";
         } else {
             document.querySelector(".clr").innerHTML = `Color: ${document.querySelector(`.${tokill}`).style.backgroundColor}`
         }
